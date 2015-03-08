@@ -1,0 +1,25 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$navbar-margin-bottom:-60px;
+$navbar-default-border:0px solid #fff;
+$navbar-default-bg:rgba(0,0,0,0.2);
+$navbar-default-link-color:#fff;
+
+
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+// HOMEPAGE
+
+#home-1 {
+	background:url(cover.jpeg);
+  /* Full Page Background Receipe */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 700px;
+}
