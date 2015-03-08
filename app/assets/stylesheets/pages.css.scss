@@ -5,10 +5,15 @@
 @import url(http://fonts.googleapis.com/css?family=Exo+2:400,900);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 
+// PANELS
+
+// $panel-default-heading-bg:#000;
+
+
 
 $navbar-margin-bottom:-60px;
 $navbar-default-border:0px solid #fff;
-$navbar-default-bg:rgba(0,0,0,0.3);
+$navbar-default-bg:rgba(0,0,0,0.2);
 $navbar-default-link-color:#fff;
 $navbar-default-link-hover-color:#f1c40f;
 $navbar-default-brand-hover-color:#f1c40f;
@@ -17,6 +22,7 @@ $navbar-default-brand-color:#f1c40f;
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
 
 // NAVBAR
 
@@ -71,4 +77,19 @@ $navbar-default-brand-color:#f1c40f;
 
 // START OF HOME-2
 
+// DEVISE REGISTRATION
 
+.panel-heading h3 {
+	color:#f1c40f;
+	font-size:28px; 
+}
+
+.panel {
+	width:300px;
+	margin-left:500px;
+	margin-top:130px;
+}
+
+.panel-body input {
+	margin-bottom:10px;
+}
