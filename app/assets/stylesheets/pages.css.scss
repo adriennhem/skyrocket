@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+
 $navbar-margin-bottom:-60px;
 $navbar-default-border:0px solid #fff;
 $navbar-default-bg:rgba(0,0,0,0.2);
@@ -22,4 +25,31 @@ $navbar-default-link-color:#fff;
   background-position: center;
   background-attachment: fixed;
   height: 700px;
+}
+
+.home-container {
+	width:1000px;
+	margin:250px 250px 200px 200px;
+	color:#ffffff;
+	font-size:26px;
+}
+
+.home-container h1 {
+	font-size:48px;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.home-container h2 {
+	font-family: 'Raleway', sans-serif;
+	margin-bottom:40px;
+	margin-left:100px;
+}
+
+.home-container a {
+	color:#fff;
+	background:#c0392b;
+	text-decoration:none;
+	padding:10px;
+	border-radius:8px;
+	margin-left:350px;
 }
