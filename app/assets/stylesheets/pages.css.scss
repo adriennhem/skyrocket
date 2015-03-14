@@ -13,7 +13,7 @@
 
 $navbar-margin-bottom:-60px;
 $navbar-default-border:0px solid #fff;
-$navbar-default-bg:rgba(0,0,0,0.2);
+$navbar-default-bg:rgba(0,0,0,0.6);
 $navbar-default-link-color:#fff;
 $navbar-default-link-hover-color:#f1c40f;
 $navbar-default-brand-hover-color:#f1c40f;
@@ -35,12 +35,10 @@ $navbar-default-brand-color:#f1c40f;
 // HOMEPAGE
 
 #home-1 {
-	background:url(learn.jpg);
+	background:url(desktop.jpeg);
   /* Full Page Background Receipe */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  height: 700px;
 }
 
 .home-container {
@@ -49,13 +47,13 @@ $navbar-default-brand-color:#f1c40f;
 	margin:250px 250px 200px 200px;
 	color:#fff;
 	font-size:26px;
-	background:rgba(0,0,0,0.4);
+	background:rgba(0,0,0,0.7);
 	border-radius:10px;
 	padding:10px 10px 15px 10px;
 }
 
 .home-container h1 {
-	font-size:48px;
+	font-size:32px;
 	font-family: 'Droid Sans', sans-serif;
 	text-transform:uppercase;
 }
@@ -92,4 +90,10 @@ $navbar-default-brand-color:#f1c40f;
 
 .panel-body input {
 	margin-bottom:10px;
+}
+
+#footer {
+	background:#000;
+	color:#000;
+	padding:14px;
 }
