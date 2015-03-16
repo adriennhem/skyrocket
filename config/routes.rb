@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'courses/course'
+  resources :lessons
 
   devise_for :users
   get 'pages/home'
