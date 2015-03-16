@@ -23,12 +23,15 @@ $navbar-default-bg:#fff;
 $navbar-default-link-color:#53535C;
 $navbar-default-link-hover-color:#f1c40f;
 $navbar-default-brand-hover-color:#404042;
-$navbar-default-brand-color:#404042;
+$navbar-default-brand-color:#55A7F5;
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#main {
+	background:#fff;
+}
 
 // *******************************************
 // *******************************************
@@ -39,6 +42,7 @@ $navbar-default-brand-color:#404042;
 .navbar-brand {
 	font-family: 'Exo 2', sans-serif;
 	font-weight:900;
+	font-size:24px;
 }
 
 // *******************************************
@@ -126,7 +130,21 @@ $navbar-default-brand-color:#404042;
 // *******************************************
 // *******************************************
 
-.lesson {
-	display:inline-block;
+h1 {
+	font-size:22px;
+	font-weight:700;
 }
 
+.lesson {
+	border:1px solid black;
+	height:400px;
+	margin-left:20px;
+}
+
+.lesson h2 {
+	font-size:18px;
+}
+
+.lesson h3 {
+	font-size:16px;
+}
