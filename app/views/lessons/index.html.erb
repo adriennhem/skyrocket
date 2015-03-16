@@ -1,33 +1,18 @@
-<p id="notice"><%= notice %></p>
+<h1 class="page-header">Web Development</h1>
 
-<h1>Listing Lessons</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Summary</th>
-      <th>Picture</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+ <% @lessons.each do |lesson| %>
+  <div class="lesson col-md-3">
 
-  <tbody>
-    <% @lessons.each do |lesson| %>
-      <tr>
-        <td><%= lesson.title %></td>
-        <td><%= lesson.author %></td>
-        <td><%= lesson.summary %></td>
-        <td><%= image_tag lesson.picture.url(:medium) %></td>
-        <td><%= link_to 'Show', lesson %></td>
-        <td><%= link_to 'Edit', edit_lesson_path(lesson) %></td>
-        <td><%= link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <h2> <%= link_to("#{lesson.title}", lesson) %></h2>
+    <h3>by <%= lesson.author %></h3>
+    <%= image_tag lesson.picture.url(:medium) %>
+    <p><%= lesson.summary %></p>
+    <%= link_to 'Show', lesson %>
+    <%= link_to 'Edit', edit_lesson_path(lesson) %>
+    <%= link_to 'Destroy', lesson, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-<br>
+  </div> <!-- lesson -->
+<% end %>
 
-<%= link_to 'New Lesson', new_lesson_path %>
+
